@@ -82,6 +82,6 @@ Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.
 
 ## Auteur
 
-Aymene LAZREG
-Projet académique Module HAI702 – Reconnaissance de gestes
-Université de Montpellier – Faculté des Sciences
+- Aymene LAZREG
+- Projet académique Module HAI702 – Reconnaissance de gestes
+- Université de Montpellier – Faculté des Sciences
