@@ -1,14 +1,14 @@
-# 🧠 SymbolRecognizer – Reconnaissance de gestes (Alphabet grec)
+# SymbolRecognizer – Reconnaissance de gestes (Alphabet grec)
 
 Application JavaFX permettant de reconnaître des gestes dessinés à la main à partir de modèles (templates), en utilisant un algorithme de reconnaissance basé sur les points caractéristiques et les vecteurs directionnels, avec auto-tuning et agrégation des résultats pour une décision plus stable.
 
-## 🚀 Prérequis
+## Prérequis
 
 - Java 11+
 - JavaFX 21
 - Système compatible avec JavaFX (Windows, Linux, macOS)
 
-## 📦 Compilation et exécution
+## Compilation et exécution
 
 ### Compilation
 Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.  
@@ -34,7 +34,7 @@ Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.
 > ```
 
 
-## 📁 Utilisation
+## Utilisation
 
 ### Chargement des templates
 1. Cliquez sur "Charger dossier templates".  
@@ -63,7 +63,7 @@ Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.
 
 
 
-## ⚙️ Principe de fonctionnement
+## Principe de fonctionnement
 
 1. Charge les templates depuis un dossier.  
 2. Binarise l’image (noir sur blanc) et détecte le plus grand composant connecté.  
@@ -73,15 +73,15 @@ Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.
 6. Compare le vecteur avec ceux des templates pour identifier le symbole le plus proche.  
 7. Optionnel : Auto-tune sur plusieurs N et agrégation des résultats pour stabiliser la reconnaissance.
 
-## 📚 Technologies
+## Technologies
 
 - Java 11+
 - JavaFX 21 (controls, fxml, swing)
 - Algorithme de reconnaissance gestuelle basé sur vecteurs de points normalisés
 - Auto-tuning et agrégation pour robustesse
 
-## 👨‍💻 Auteur
+## Auteur
 
 Aymene LAZREG
-Projet académique Mdule HAI702 – Reconnaissance de gestes  
+Projet académique Module HAI702 – Reconnaissance de gestes
 Université de Montpellier – Faculté des Sciences
