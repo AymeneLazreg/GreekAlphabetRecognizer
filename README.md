@@ -12,33 +12,29 @@ Application JavaFX permettant de reconnaître des gestes dessinés à la main à
 
 ### Compilation
 Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.  
-Compilez le programme avec la commande :
 
-javac --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing SymbolRecognizer.java
 
-markdown
-Copier le code
+> Compilez le programme avec la commande : 
+> ```
+> javac --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing SymbolRecognizer.java
+> ```
+
 
 ### Génération du fichier JAR
 Créez le fichier `SymbolRecognizer.jar` avec :
 
-jar cfm SymbolRecognizer.jar manifest.txt SymbolRecognizer.class
-
-shell
-Copier le code
-
-> Le fichier `manifest.txt` doit contenir au minimum :  
 > ```
-> Main-Class: SymbolRecognizer
+> jar cfm SymbolRecognizer.jar manifest.txt SymbolRecognizer.class
 > ```
+
 
 ### Exécution
 Exécutez l’application avec :
 
-java --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar SymbolRecognizer.jar
+> ```
+> java --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar SymbolRecognizer.jar
+> ```
 
-markdown
-Copier le code
 
 ## 📁 Utilisation
 
@@ -48,12 +44,12 @@ Copier le code
 
 ### Format des images
 - Images en noir sur fond blanc.  
-- Nommage recommandé : `lettre_1.png, lettre_2.png, ...`  
+- Nommage obligatoire : `lettre_1.png, lettre_2.png, ...`  
   Exemple : `alpha_1.png`, `beta_2.png`.
 
 ### Paramétrage du nombre de points
 - Le nombre de points N permet de discrétiser les gestes pour calculer les vecteurs directionnels.  
-- Plus N est grand → plus de précision, mais temps de calcul plus long.  
+- Plus N est grand ne veut pas forcement dire plus de précision, mais temps de calcul plus long.  
 - Vous pouvez modifier N avec le spinner dans l’interface.
 
 ### Reconnaissance et Auto-tuning
@@ -67,20 +63,7 @@ Copier le code
 
 > L’auto-tune teste plusieurs valeurs de N et agrège les résultats pour stabiliser la reconnaissance.
 
-## 🧩 Structure du projet
 
-SymbolRecognizer/
-│
-├── SymbolRecognizer.java # Code source principal
-├── manifest.txt # Fichier de configuration JAR
-├── SymbolRecognizer.jar # Application compilée (générée)
-└── templates/ # Dossier contenant les modèles
-├── alpha_1.png
-├── beta_1.png
-└── ...
-
-markdown
-Copier le code
 
 ## ⚙️ Principe de fonctionnement
 
@@ -101,5 +84,6 @@ Copier le code
 
 ## 👨‍💻 Auteur
 
-Projet académique – Reconnaissance de gestes  
+Aymene LAZREG
+Projet académique Mdule HAI702 – Reconnaissance de gestes  
 Université de Montpellier – Faculté des Sciences
