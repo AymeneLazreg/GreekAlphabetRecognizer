@@ -21,16 +21,14 @@ Assurez-vous que JavaFX SDK est installé et accessible sur votre machine.
 
 
 ### Génération du fichier JAR
-Créez le fichier `SymbolRecognizer.jar` avec :
-
+>Créez le fichier `SymbolRecognizer.jar` avec :
 > ```
 > jar cfm SymbolRecognizer.jar manifest.txt SymbolRecognizer.class
 > ```
 
 
 ### Exécution
-Exécutez l’application avec :
-
+>Exécutez l’application avec :
 > ```
 > java --module-path "C:\javafx-sdk-21\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar SymbolRecognizer.jar
 > ```
